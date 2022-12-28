@@ -1,3 +1,4 @@
+import { IoLogoFacebook, IoLogoGoogle } from "react-icons/io5"
 import DIAMOND from "../../component/assets/diamond.png";
 
 export default function Form() {
@@ -47,28 +48,25 @@ export default function Form() {
                 </div>
 
                 <button
-                  className="btn btn-primary btn-lg btn-block"
+                  className="btn btn-warning btn-lg btn-block"
                   type="submit"
                 >
-                  Login
+                 <b>Login</b>
                 </button>
 
                 <hr className="my-4" />
 
                 <button
-                  className="btn btn-lg btn-block btn-primary"
-                  style={{ background: "#dd4b39" }}
+                  className="btn btn-lg btn-block btn-success mb-2 m-1"
                   type="submit"
                 >
-                  <i className="fab fa-google me-2"></i> Sign in with google
+                  <IoLogoGoogle size={25} />
                 </button>
                 <button
-                  className="btn btn-lg btn-block btn-primary mb-2"
-                  style={{ background: "#3b5998" }}
+                  className="facebook btn btn-lg btn-block btn-primary mb-2 m-1"
                   type="submit"
                 >
-                  <i className="fab fa-facebook-f me-2"></i>Sign in with
-                  facebook
+                  <IoLogoFacebook size={25} />
                 </button>
               </div>
             </div>
