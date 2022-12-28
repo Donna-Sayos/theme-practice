@@ -10,3 +10,9 @@ body {
 .facebook {
     background-color: #3b5998;
 }
+
+.login {
+    background-color: #FFE38C;
+    border: 1px solid #BA9900;
+    transition: all 400ms ease;
+}
