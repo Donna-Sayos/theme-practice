@@ -123,3 +123,14 @@
 .goo-logo {
     color: white;
 }
+
+.switch {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+#dark .switch-label {
+    color:#f6d992;
+}
