@@ -8,6 +8,7 @@ export default function Form() {
           <div className="col-12 col-md-8 col-lg-6 col-xl-5">
             <div className="form-container card shadow-lg p-3 mb-5">
               <div className="card-body p-5 text-center">
+                <img src={DIAMOND} width={80} height={60} />
                 <h3 className="mb-5">Sign in</h3>
 
                 <div className="form-outline mb-4">
