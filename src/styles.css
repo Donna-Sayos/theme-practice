@@ -32,6 +32,7 @@
 }
 
 #light .login {
+    color: 	#a67c00;
     background-color: #FFE38C;
     border: 1px solid #ecb939;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -46,6 +47,7 @@
 }
 
 #dark .login {
+    color: #66545e;
     background-color: #ffe0bd;
     border: 1px solid #e4d5b7;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
