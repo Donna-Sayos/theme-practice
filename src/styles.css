@@ -1,0 +1,8 @@
+body {
+    background-image: linear-gradient( 95deg, rgba(173,252,234,1) 27%, rgba(192,229,246,1) 64%);
+}
+
+.form-container {
+    border-radius: 1.5rem;
+    background-color: rgba(222,194,203, 0.2);
+}
