@@ -20,7 +20,7 @@ export default function Form() {
                     className="form-control form-control-lg"
                     ref={btnRef}
                   />
-                  <label className="inp form-label" htmlFor="typeEmailX-2">
+                  <label className="inp form-label" htmlFor="email">
                     Email
                   </label>
                 </div>
@@ -29,7 +29,7 @@ export default function Form() {
                     type="password"
                     className="form-control form-control-lg"
                   />
-                  <label className="inp form-label" htmlFor="typePasswordX-2">
+                  <label className="inp form-label" htmlFor="password">
                     Password
                   </label>
                 </div>
@@ -37,7 +37,7 @@ export default function Form() {
                   <input className="form-check-input" type="checkbox" />
                   <label
                     className="checkbox form-check-label mx-1"
-                    htmlFor="form1Example3"
+                    htmlFor="checkbox"
                   >
                     {" "}
                     Remember password{" "}
