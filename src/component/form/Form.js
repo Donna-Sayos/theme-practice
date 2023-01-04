@@ -1,9 +1,11 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { IoLogoFacebook, IoLogoGoogle } from "react-icons/io5";
 import DIAMOND from "../../component/assets/diamond.png";
 
 export default function Form() {
   const btnRef = useRef(null);
+  const navigate = useNavigate();
 
   return (
     <section>
@@ -40,7 +42,11 @@ export default function Form() {
                   </label>
                 </div>
                 <div className="form-check d-flex justify-content-start mb-4">
-                  <input className="form-check-input" type="checkbox" id="checkbox" />
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="checkbox"
+                  />
                   <label
                     className="checkbox form-check-label mx-1"
                     htmlFor="checkbox"
@@ -55,6 +61,13 @@ export default function Form() {
                   onClick={() => btnRef.current.focus()}
                 >
                   Login
+                </button>
+                <button
+                  className="signup btn btn-lg"
+                  type="button"
+                  onClick={() => navigate("/signup")}
+                >
+                  Signup
                 </button>
                 <hr className="my-4" />{" "}
                 {/* This creates a line divider between the buttons */}

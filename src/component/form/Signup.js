@@ -1,5 +1,6 @@
 import "./signup.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { validateEmail } from "../utils/emailValidator";
 
 const PasswordErrorMessage = () => {
