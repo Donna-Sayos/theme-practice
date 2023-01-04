@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { IoLogoFacebook, IoLogoGoogle } from "react-icons/io5";
 import DIAMOND from "../../component/assets/diamond.png";
 
-export default function Form() {
+export default function Login() {
   const btnRef = useRef(null);
   const navigate = useNavigate();
 
