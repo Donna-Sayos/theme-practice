@@ -10,6 +10,7 @@ const PasswordErrorMessage = () => {
 };
 
 function Signup() {
+  const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -47,6 +48,11 @@ function Signup() {
 
   return (
     <div className="App">
+      <div>
+        <button type="button" onClick={() => navigate("/")}>
+          back
+        </button>
+      </div>
       <form onSubmit={handleSubmit}>
         <fieldset>
           <h2>Sign Up</h2>
