@@ -1,18 +1,27 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IoLogoFacebook, IoLogoGoogle } from "react-icons/io5";
 import DIAMOND from "../../component/assets/diamond.png";
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const btnRef = useRef(null);
   const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <section>
       <div className="container py-5 h-100">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div className="form-container card p-3 mb-5">
+            <form
+              className="form-container card p-3 mb-5"
+              onSubmit={handleSubmit}
+            >
               <div className="card-body p-5 text-center">
                 <img src={DIAMOND} width={80} height={60} alt="diamond" />
                 <h3 className="sign-in mb-5">Sign in</h3>
@@ -20,6 +29,9 @@ export default function Login() {
                   <input
                     type="email"
                     id="email"
+                    data-testid="email-input"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                     minLength={4}
                     className="form-control form-control-lg"
@@ -28,11 +40,14 @@ export default function Login() {
                   <label className="inp form-label" htmlFor="email">
                     Email
                   </label>
+                  {email && !(/\S+@\S+\.\S+/).test(email) && <span className="error" data-testid="error-msg">Please enter a valid email.</span>}
                 </div>
                 <div className="form-outline mb-4">
                   <input
                     type="password"
                     id="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
                     minLength={8}
                     className="form-control form-control-lg"
@@ -84,7 +99,7 @@ export default function Login() {
                   <IoLogoFacebook className="fa-logo" size={25} />
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
