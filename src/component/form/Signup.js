@@ -48,14 +48,14 @@ function Signup() {
 
   return (
     <div className="App">
-      <div>
-        <button type="button" onClick={() => navigate("/")}>
-          back
-        </button>
-      </div>
       <form onSubmit={handleSubmit}>
+        <div className="mb-2">
+          <button className="btn btn-warning" type="button" onClick={() => navigate("/")}>
+            back
+          </button>
+        </div>
         <fieldset>
-          <h2>Sign Up</h2>
+          <legend>Sign Up</legend>
           <div className="Field">
             <label>
               First name <sup>*</sup>
