@@ -119,7 +119,7 @@ function Signup() {
               <option value="business">Business</option>
             </select>
           </div>
-          <button type="submit" disabled={!getIsFormValid()}>
+          <button className="btn btn-primary" type="submit" disabled={!getIsFormValid()}>
             Create account
           </button>
         </fieldset>
